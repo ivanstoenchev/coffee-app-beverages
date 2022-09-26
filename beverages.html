@@ -1,0 +1,84 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles-beverages.css">
+    <script src="https://kit.fontawesome.com/7ba2845c45.js" crossorigin="anonymous"></script>
+    <title>Beverages</title>
+</head>
+
+<body>
+    <div class="main-container">
+        <header>
+            <nav>
+                <img src="./img/coffee-logo.jpg" alt="Logo">
+                <a href="" class="toggle-btn">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </a>
+                <div class="nav-bar-links active">
+                    <ul>
+                        <li><a href="index.html" class="links">Home</a></li>
+                        <li><a href="info.html" class="links">Info</a></li>
+                        <li><a href="#" class="links">Beverages</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <form id="coffee-form">
+                <label for="New Coffee Drink">Enter New Coffee Drink</label><br><br><br>
+                <div>
+                    <label>Coffee Name: </label> <br>
+                    <input type="text" name="coffee-title" id="coffeeInput"><br><br>
+                </div>
+                <div>
+                    <label> Coffee Description:</label><br>
+                    <input type="text" name="coffee-description" id="coffeeInput"><br><br>
+                </div>
+                <div>
+                    <label> Coffee Ingredients:</label><br>
+                    <input type="text" name="coffee-ingredients" id="coffeeInput"><br><br>
+                </div>
+                <input type="reset" id="res">
+                <button id="coffee-submit">New Coffee</button>
+                <button id="coffee-edit">Edit Coffee</button>
+            </form>
+
+            <div class="coffee-select">
+                <label for="coffee-drinks">Choose Favorite Drink</label><br><br>
+                <select id="drinks">
+                    <option value="" disabled selected>--Select--</option>
+                </select>
+                <button id='del'>Delete</button>
+                <div>
+                    <p id="desc"></p>
+                </div>
+                <div>
+                    <p id="ingrd"></p>
+                </div>
+            </div>
+        </header>
+
+        <footer>
+            <ul>
+                <li><a href=""><i class="fab fa-facebook-square"></i></i></a></li>
+                <li><a href=""><i class="fab fa-twitter-square"></i></i></a></li>
+                <li><a href=""><i class="fab fa-youtube-square"></i></i></a></li>
+            </ul>
+        </footer>
+
+
+
+
+
+
+
+        <script src="./src/index.js"></script>
+        <script src="./src/links.js" type="text/javascript"></script>
+
+</body>
+
+</html>

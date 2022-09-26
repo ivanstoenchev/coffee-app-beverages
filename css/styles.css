@@ -1,0 +1,471 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Montserrat', sans-serif;    
+}
+
+.main-container {
+    max-width: 1920px;    
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+ul {
+    list-style: none;
+}
+
+header {
+    position: relative;    
+    width: 100%;
+    height: 1000px;
+    background-image: url(../img/coffee-header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+nav {
+    width: 60%;
+    margin: 0 auto;
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid grey;
+}
+
+nav img {
+    width: 100px;
+    height: 80px;
+    margin-left: 5%;    
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    margin-right: 5%;
+}
+nav ul li {
+    /* display: inline; */
+    margin-right: 20px;
+}
+.toggle-btn {
+    position: absolute;
+    top: 0.75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-btn .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+
+ 
+.head-text {
+    position: absolute;
+    width: 500px;    
+    height: 300px;
+    margin-left: 250px;
+    top: 50%;
+    transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+}
+
+.head-text h1{
+    color: #fff;
+    letter-spacing: 20px;
+    font-size: 40px;
+}
+
+.head-text h3 {
+    color: #fff;
+    letter-spacing: 7px;
+    margin-top: 15px;
+    font-size: 30px;
+}
+
+.first-section { 
+    position: relative;    
+    background-color: #c7c9c5ff;   
+    padding:0 0 100px 0;   
+    display: flex;
+    flex-direction: row;    
+    justify-content: space-evenly;
+}
+
+.sweet-section img {
+    background-color: #402c74;    
+    margin-top: 30px;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+}
+
+.taste-section img {
+    margin-top: 30px;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+}
+
+.aromatic-section img {
+    margin-top: 30px;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+}
+
+.first-section p {
+    width: 300px;
+    font-size: 18px;
+    margin-top: 20px;
+    color: #202120;
+    text-align: center;}
+
+footer {
+    background-color: #F7F7F7;
+    padding: 100px;
+    
+}
+footer ul {
+    width: 100%;     
+    text-align: center;           
+}
+
+footer ul li {
+    font-size: 20px;
+    display: inline-block;
+    background-color: #F1F1F1;
+    border-radius: 50%;
+    padding: 20px;
+    margin: 20px;
+}
+
+footer i {
+    font-size: 35px;
+    color: #707069;
+    
+}
+
+
+@media screen and (max-width: 1024px) {
+    
+    nav {
+        height: 90px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    nav img {
+        width: 100px;
+        height: 80px;
+        margin-left: 5%;    
+    }
+    
+    nav ul {
+        margin-right: 80px;
+    }
+    nav ul li {
+        display: inline;
+        margin-right: 10px;
+    }
+    .head-text {
+        position: absolute;
+        width: 250px;    
+        height: 150px;
+        margin-left: 90px;
+        top: 50%;
+        transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+    }
+    
+    .head-text h1{
+        color: #c7c9c5ff;
+        letter-spacing: 7px;
+        font-size: 28px;
+    }
+    
+    .head-text h3 {
+        color: #c7c9c5ff;
+        letter-spacing: 3px;
+        margin-top: 15px;
+        font-size: 15px;
+    }
+
+    .first-section { 
+        position: relative;
+        margin: 0 auto;
+        background-color: #c7c9c5;
+        padding-bottom: 100px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;        
+    }
+    
+    .sweet-section img {        
+        margin: 10px;
+        height: 150px;
+        width: 150px;        
+    }
+    
+    .taste-section img {       
+        height: 150px;
+        width: 150px; 
+        margin: 10px;
+
+    }
+    
+    .aromatic-section img {        
+        height: 150px;
+        width: 150px;   
+        margin: 10px;
+
+    }
+    
+    .first-section p {
+        width: 150px;
+        margin: 0 auto;
+        font-size: 16px;
+        margin-top: 5px auto;
+        color: #202120;                 
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+
+    header {
+        position: relative;
+        height: 500px;
+        background-image: url(../img/coffee-header.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    nav {
+    width: 60%;
+    margin: 0 auto;
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid grey;
+}
+
+nav img {
+    width: 100px;
+    height: 80px;
+    margin-left: 5%;    
+}
+
+nav ul {
+    margin-right: 5%;
+}
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.head-text {
+    position: absolute;
+    width: 250px;    
+    height: 150px;
+    margin-left: 90px;
+    top: 50%;
+    transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+}
+
+.head-text h1{
+    color: #c7c9c5ff;
+    letter-spacing: 7px;
+    font-size: 28px;
+}
+
+.head-text h3 {
+    color: #c7c9c5ff;
+    letter-spacing: 3px;
+    margin-top: 15px;
+    font-size: 15px;
+}
+
+.first-section { 
+    position: relative;
+    margin: 0 auto;
+    background-color: #c7c9c5;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;        
+}
+
+.sweet-section img {        
+    margin: 10px;
+    height: 150px;
+    width: 150px;        
+}
+
+.taste-section img {       
+    height: 150px;
+    width: 150px; 
+    margin: 10px;
+
+}
+
+.aromatic-section img {        
+    height: 150px;
+    width: 150px;   
+    margin: 10px;
+
+}
+
+.first-section p {
+    width: 150px;
+    margin: 0 auto;
+    font-size: 16px;
+    margin-top: 5px auto;
+    color: #202120;                 
+}
+
+@media screen and (max-width: 500px) {
+  
+
+    header {
+        position: relative;
+        height: 500px;
+        background-image: url(../img/coffee-header.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;    }
+
+    
+    
+    nav {
+        width: 60%;
+        margin: 0 auto;
+        height: 90px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid grey;
+}
+    
+    nav img {
+        width: 50px;
+        height: 40px;
+        margin-left: 10px;    
+    }
+    
+    nav ul  {
+        width: 100%;        
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center;  
+        padding: 1rem 1rem;     
+            
+    }    
+    
+    .toggle-btn{
+        display: flex;
+    }
+    .active {
+        width: 100%;
+        display: none;       
+    }
+
+    .head-text {
+        position: absolute;
+        width: 250px;    
+        height: 150px;
+        margin-left: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+    }
+    
+    .head-text h1{
+        color: #c7c9c5ff;
+        letter-spacing: 2px;
+        font-size: 14px;
+    }
+    
+    .head-text h3 {
+        color: #c7c9c5ff;
+        letter-spacing: 3px;
+        margin-top: 15px;
+        font-size: 15px;
+    }
+
+    .first-section { 
+        position: relative;
+        margin: 0 auto;
+        background-color: #c7c9c5;   
+        padding-bottom: 100px;  
+        display: flex;
+        flex-direction: column;    
+        justify-content: space-evenly;
+    }
+    .sweet-section {        
+        width: 187.5px;
+        margin: 0 auto;
+    }
+    
+    .sweet-section img {        
+        margin: 10px;
+        height: 150px;
+        width: 150px; 
+        text-align: center;     
+        
+    }
+    
+    .taste-section {
+        width: 187.5px;
+        margin: 0 auto;
+    }
+
+    .taste-section img {       
+        height: 150px;
+        width: 150px; 
+        margin: 10px;
+
+    }
+    .aromatic-section {
+        width: 187.5px;
+        margin: 0 auto;
+    }
+    .aromatic-section img {        
+        height: 150px;
+        width: 150px;   
+        margin: 10px;
+
+    }
+    
+    .first-section p {
+        width: 0 auto;
+        font-size: 16px;
+        margin-top: 5px auto;
+        color: #202120;         
+    }
+}}

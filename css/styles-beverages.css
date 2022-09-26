@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
+.main-container {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+}
+ul {
+  list-style: none;
+}
+
+header {
+  position: relative;
+  height: 1000px;
+  background-image: url(../img/header-beverages.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+nav {
+  width: 60%;
+  margin: 0 auto;
+  height: 90px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid grey;
+}
+
+nav img {
+  width: 100px;
+  height: 80px;
+  margin-left: 5%;    
+}
+
+nav ul {
+  width: 100%;        
+  display: flex;
+  flex-direction: row;
+  justify-content: center; 
+  align-items: center;  
+  padding: 1rem 1rem;     
+      
+}
+nav ul li {
+  /* display: inline; */
+  margin-right: 20px;
+}
+
+.toggle-btn {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-btn .bar{
+  height: 3px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+#coffee-form {
+  margin: 50px 0 0 50px;
+}
+#coffeeInput {
+  width: 400px;
+  height: 4%;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+label {
+  color: #fff;
+}
+
+.coffee-select {
+  margin: 50px 0 0 50px;
+}
+#res {
+  font-size: 18px;
+  padding: 5px 15px;
+  border-radius: 5px;
+  background: deepskyblue;
+  color: #FFF;
+  /* margin-right: 20px; */
+}
+
+#coffee-submit,
+#coffee-edit {
+  font-size: 18px;
+  padding: 5px 15px;
+  border-radius: 5px;
+  background: deepskyblue;
+  color: #fff;
+}
+
+#drinks {
+  height: 3%;
+  border: none;
+  border-radius: 4px;
+}
+
+#del {
+  font-size: 18px;
+  background-color: #ff0027;
+  color: #fff;
+  padding: 0.3em 1.2em;
+  margin-left: 10px;
+  border-color: #ff0027;
+  border-radius: 2em;
+}
+
+#desc {
+  margin-top: 10px;
+  width: 20%;
+  color: #fff;
+  font-size: 16px;
+  text-shadow: 1px 1px #333; 
+}
+
+#ingrd {
+  margin-top: 15px;
+  width: 20%;
+  color: #fff;
+  font-size: 16px;
+  text-shadow: 1px 1px #333; 
+}
+
+footer {
+  background-color: #F7F7F7;
+  padding: 100px;
+  
+}
+footer ul {
+  width: 100%;     
+  text-align: center;           
+}
+
+footer ul li {
+  font-size: 20px;
+  display: inline-block;
+  background-color: #F1F1F1;
+  border-radius: 50%;
+  padding: 20px;
+  margin: 20px;
+}
+
+footer i {
+  font-size: 35px;
+  color: #707069;
+  
+}
+ 
+@media (max-width: 768px) {
+   #desc, #ingrd {
+     width: 50%
+   }
+   
+}
+
+@media (max-width: 500px) {
+  nav ul {
+    width: 100%;        
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;  
+    padding: 1rem 1rem;     
+        
+  }
+  nav ul li {
+    /* display: inline; */
+    margin-right: 20px;
+  }
+  .toggle-btn{
+    display: flex;
+}
+.active {
+    width: 100%;
+    display: none;  
+}
+  #coffeeInput{
+    width: 300px; 
+  }
+
+  #desc, #ingrd {
+    width: 200px;
+  }
+}
